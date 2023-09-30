@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- favicon -->
+  <link href='./assets/favicon/favicon.ico' rel='apple-touch-icon' sizes='120x120'/>
+  <link href='./assets/favicon/favicon.ico' rel='apple-touch-icon' sizes='152x152'/>
+  <link href='./assets/favicon/favicon.ico' rel='icon' type='image/x-icon'/>
+  <link href='./assets/favicon/favicon.ico' rel='shortcut icon' type='image/x-icon'/>
+  <!-- csss -->
+  <link crossorigin='anonymous' href='https://fonts.gstatic.com' rel='preconnect'/>
+  <link crossorigin='anonymous' href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&amp;display=swap' rel='stylesheet' type='font/woff2'/>
+  <link as='style' crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' onload='this.onload=null;this.rel="stylesheet"' rel='preload'/>
+  <link as='style' crossorigin='anonymous' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/stackoverflow-light.min.css' onload='this.onload=null;this.rel="stylesheet"' rel='preload'/>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-lg-8 col-md-10 col-sm-12 mx-auto'>
+          <nav class='navbar navbar-expand-lg' id='nav'>
+            <a class='navbar-brand nav-title fw-bold' href='./index.html'>
+              Blog.</a>
+            <button aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation' class='navbar-toggler' data-bs-target='#navbarNav' data-bs-toggle='collapse' type='button'>
+              <span class='navbar-toggler-icon'/>
+            </button>
+            <div class='collapse navbar-collapse' id='navbarNav'>
+              <ul class='navbar-nav ms-auto mb-2 mb-lg-0'>
+                <li class='nav-item'>
+                  <a class='nav-link' href='./index.html'>Home</a>
+                </li>
+                <li class='nav-item'>
+                  <a class='nav-link' href='./uses.html'>
+                    Uses
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main class="mb-4">
+    <section class='pt-5 pb-3 mt-3'>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
+            <h3 class='mb-0 fw-bold title'>
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </h3>
+            <p class='card-text small mb-3'>
+              Posted on Sep 29, 2023
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quis labore provident inventore, obcaecati laudantium nam dolore dicta repellendus quaerat.
+            </p>
+
+            <p>
+              <img class="img-fluid rounded mx-auto d-block zoom lozad" data-src="https://images.unsplash.com/photo-1640552435388-a54879e72b28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" src="https://images.unsplash.com/photo-1640552435388-a54879e72b28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
+            </p>
+            <p class="mt-0 mb-3 text-center small">Photo by <a class="cta text-decoration-none" href="https://unsplash.com/@lukash">Lukas</a> on Unplash</p>
+
+            <p>Setup Apache
+              <pre class="card p-3 mb-2">
+<code class="stackoverflow-light language-bash">#install apache
+sudo pacman -S apache
+
+#start apache
+sudo systemctl start httpd.service 
+
+#status apache services
+systemctl status httpd.service
+</code>
+              </pre>
+            </p>
+
+            <div class="blog-pager" id="blog-pager">
+              <span id="blog-pager-newer-link">
+                <a class="blog-pager-newer-link" href="#" id="Blog1_blog-pager-newer-link" title="Newer Post">
+                Newer Post
+                </a>
+              </span>
+              <span id="blog-pager-older-link">
+                <a class="blog-pager-older-link" href="#" id="Blog1_blog-pager-older-link" title="Older Post">
+                Older Post
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class='pt-0 pb-2'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-lg-8 col-md-10 col-sm-12 mx-auto fs-6 text-center'>
+          <p class='mb-1'>
+            <a class='text-decoration-none cta' href='#'>Privacy Policy</a>
+          </p>
+          <p>
+            &#169;2023 <a class='text-decoration-none cta' href='./index.html'>Blog</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id='backToTopButton'>
+    <svg height='15' viewBox='0 0 15 15' width='15' xmlns='http://www.w3.org/2000/svg'><path d='m1 10l6.5-7l6.5 7' fill='none' stroke='currentColor' stroke-linecap='square'/></svg>
+  </button>
+  
+  <div class='alert col-lg-3 col-md-4 col-sm-4 cookie-consent' id='cookieConsent' role='alert'>
+    <p class='p-0 small'>
+      This site uses cookies from Google to provide its services to analyze traffic. By using this site, you agree to the use of cookies. To find out more, see here: <a class='alert-link link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover' href='./privacy-policy.html'>Our Privacy Policy</a>
+    </p>
+    <div class='mt-0 d-grid gap-2 d-md-flex justify-content-md-end'>
+      <button class='btn btn-outline-light btn-sm cookieConsent-accept cookie-consent-cta' type='button'>Got it</button>
+    </div>
+  </div>
+
+  <script async='async' crossorigin='anonymous' integrity='sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL' src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'></script>
+  <script crossorigin='anonymous' defer='defer' integrity='sha512-rdhY3cbXURo13l/WU9VlaRyaIYeJ/KBakckXIvJNAQde8DgpOmE+eZf7ha4vdqVjTtwQt69bD2wH2LXob/LB7Q==' referrerpolicy='no-referrer' src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js'></script>
+  <script crossorigin='anonymous' defer='defer' integrity='sha512-J3G1KdOKUuj92x5w2mV/7AmPckHbiTQdoPXd6qaeHemfcNOsuwFVQm851m+lLuJR33sGuz9TAzWtccXZOsFE0Q==' referrerpolicy='no-referrer' src='https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js'></script>
+  <script crossorigin='anonymous' src='https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js'></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
